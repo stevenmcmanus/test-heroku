@@ -5,7 +5,7 @@ var app = express();
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
-var dummyData = [{data:"master3"}];
+var dummyData = [{data:"master4"}];
 app.get('/api/get-data', function(req, resp) {
   resp.json({data:dummyData});
 })
